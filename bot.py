@@ -34,6 +34,8 @@ BOT_TOKEN = os.getenv("BOT_TOKEN")
 GUILD_ID = _int_or_none(os.getenv("GUILD_ID"))
 SUPPORT_ROLE_ID = _int_or_none(os.getenv("SUPPORT_ROLE_ID"))
 TICKET_CATEGORY_ID = _int_or_none(os.getenv("TICKET_CATEGORY_ID"))
+BANDITS_ROLE_ID = 1546880925525217300
+ADMINS_ROLE_ID = 1546883844219871232
 
 # ---------------------------------------------------------------------------
 # EDIT THIS to change the questions asked when someone opens a ticket.
@@ -92,10 +94,11 @@ async def run_ticket_questions(channel: discord.TextChannel, user: discord.Membe
     def check(message: discord.Message) -> bool:
         return message.author.id == user.id and message.channel.id == channel.id
 
-    answers = []
+       answers = []
     await channel.send(
-        f"Hey {user.mention}, thanks for opening a ticket! I'll ask you a few "
-        f"questions — just reply here after each one."
+        f"Hey <@&{BANDITS_ROLE_ID}>, thanks for opening a ticket!\n"
+        f"<@&{ADMINS_ROLE_ID}> will soon respond to your ticket.\n"
+        f"Till then we suggest that you answer a few questions"
     )
 
     for i, question in enumerate(TICKET_QUESTIONS, start=1):
