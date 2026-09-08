@@ -43,9 +43,9 @@ ADMINS_ROLE_ID = 1546883844219871232
 # the old popup form had). Add or remove as many as you want.
 # ---------------------------------------------------------------------------
 TICKET_QUESTIONS = [
-    "What do you need help with?",
-    "Describe your issue in detail.",
-    "Have you tried anything already? (say 'no' if not)",
+    "How long have you been into memecoins?",
+    "Do you know about rugging?",
+    "What is the capital size you usually go with while trading?",
 ]
 
 # How long (in seconds) the bot waits for a reply before giving up on a ticket.
