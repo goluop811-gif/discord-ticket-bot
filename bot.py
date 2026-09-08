@@ -94,7 +94,7 @@ async def run_ticket_questions(channel: discord.TextChannel, user: discord.Membe
     def check(message: discord.Message) -> bool:
         return message.author.id == user.id and message.channel.id == channel.id
 
-       answers = []
+    answers = []
     await channel.send(
         f"Hey <@&{BANDITS_ROLE_ID}>, thanks for opening a ticket!\n"
         f"<@&{ADMINS_ROLE_ID}> will soon respond to your ticket.\n"
