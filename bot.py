@@ -33,9 +33,9 @@ def _int_or_none(value):
 
 
 BOT_TOKEN = os.getenv("BOT_TOKEN")
-GUILD_ID = _int_or_none(os.getenv("GUILD_ID"))
-SUPPORT_ROLE_ID = _int_or_none(os.getenv("SUPPORT_ROLE_ID"))
-TICKET_CATEGORY_ID = _int_or_none(os.getenv("TICKET_CATEGORY_ID"))
+GUILD_ID = _int_or_none(os.getenv("1518469117785411655"))
+SUPPORT_ROLE_ID = _int_or_none(os.getenv("1546883844219871232"))
+TICKET_CATEGORY_ID = _int_or_none(os.getenv("1545878265309171842"))
 
 BANDITS_ROLE_ID = 1546880925525217300
 ADMINS_ROLE_ID = 1546883844219871232
