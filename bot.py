@@ -1,4 +1,3 @@
-```python
 """
 Discord Ticket + Payment Bot
 
@@ -564,4 +563,3 @@ if __name__ == "__main__":
         )
 
     bot.run(BOT_TOKEN)
-```
